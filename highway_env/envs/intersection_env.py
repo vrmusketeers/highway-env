@@ -53,10 +53,10 @@ class IntersectionEnv(AbstractEnv):
             "screen_height": 600,
             "centering_position": [0.5, 0.6],
             "scaling": 5.5 * 1.3,
-            "collision_reward": -1,
+            "collision_reward": -5,
             "high_speed_reward": 1,
             "arrived_reward": 1,
-            "reward_speed_range": [1.0, 9.0],
+            "reward_speed_range": [5.0, 9.0],
             "normalize_reward": False
         })
         return config
