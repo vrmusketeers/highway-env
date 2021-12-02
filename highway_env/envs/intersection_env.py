@@ -12,7 +12,7 @@ from highway_env.vehicle.kinematics import Vehicle
 from highway_env.vehicle.controller import ControlledVehicle
 
 
-class IntersectionEnv(AbstractEnv):
+class IntersectionEnv1(AbstractEnv):
 
     ACTIONS: Dict[int, str] = {
         0: 'SLOWER',
