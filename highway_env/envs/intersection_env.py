@@ -12,7 +12,7 @@ from highway_env.vehicle.kinematics import Vehicle
 from highway_env.vehicle.controller import ControlledVehicle
 
 
-class IntersectionEnv1(AbstractEnv):
+class IntersectionEnv(AbstractEnv):
 
     ACTIONS: Dict[int, str] = {
         0: 'SLOWER',
@@ -53,10 +53,10 @@ class IntersectionEnv1(AbstractEnv):
             "screen_height": 600,
             "centering_position": [0.5, 0.6],
             "scaling": 5.5 * 1.3,
-            "collision_reward": -5,
+            "collision_reward": -1,
             "high_speed_reward": 1,
             "arrived_reward": 1,
-            "reward_speed_range": [7.0, 9.0],
+            "reward_speed_range": [1.0, 9.0],
             "normalize_reward": False
         })
         return config
